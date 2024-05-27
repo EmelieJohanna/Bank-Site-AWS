@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color: #1f2937;
+  --text-color2: #afafaf;
+  --background-color: #f8fafc;
+  --accent-color: #3984ab;
+  --secondary-color: #e0e7ff;
+  --highlight-color: #ec4899;
+  --border-style: 2px dashed #e5e7eb;
+  --shadow-color: #b1bbce;
+}
+
+.dark {
+  --text-color: #d0ebff;
+  --text-color2: #bdbdbd;
+  --background-color: #002961;
+  /* cards */
+  --accent-color: #03336a;
+  /* buttons, hover */
+  --secondary-color: #1097f9;
+  /* key info, interactive elements */
+  --highlight-color: #f472b6;
+  --border-style: 2px dashed #4b5563;
+  --shadow-color: #08afa1;
+}
+
+.pink {
+  --text-color: #1f2937;
+  --text-color2: #bdbdbd;
+  --background-color: #f7d0f3;
+  --accent-color: #c737a5;
+  --secondary-color: #db65a6;
+  --highlight-color: #c53c80;
+  --border-style: 2px dashed #e5e7eb;
+  --shadow-color: #fef3c7;
+}
+
+.hover:hover {
+  text-decoration: underline;
+}
+
+.nav-open {
+  z-index: 50;
+}
+
+.person-icon {
+  z-index: 10;
+}
