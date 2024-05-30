@@ -10,7 +10,7 @@ export default function Account() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      fetch("http://localhost:4003/me/accounts", {
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/me/accounts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -27,7 +27,7 @@ export default function Account() {
 
   const handleTransaction = () => {
     const token = localStorage.getItem("token");
-    fetch("http://localhost:4003/me/accounts/transactions", {
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/me/accounts/transactions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
